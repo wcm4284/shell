@@ -1,3 +1,8 @@
+#include "pwd.h"
+
 int main(int argc, char** argv) {
-	return 0;	
+	
+	if (pwd_command(argc, argv) < 0) {
+		return -1;
+	}
 }
