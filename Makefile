@@ -23,6 +23,7 @@ clean:
 	@rm main *.o
 
 push: run
+	@git pull
 	@git add *.c
 	@git add Makefile
 	@git add *.h
